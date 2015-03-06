@@ -14,13 +14,18 @@
 
 @implementation ExampleViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-
 - (void)loadView {
     self.view                 = [[UIView alloc] initWithFrame:EK_SCREEN_BOUNDS];
     self.view.backgroundColor = [UIColor whiteColor];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.videoPath = [[NSBundle mainBundle] pathForResource:@"Video" ofType:@"mp4"];
+    self.repeat    = YES;
+    
+    [self play];
 }
 
 - (void)didReceiveMemoryWarning {

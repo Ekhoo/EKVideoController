@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EKVideoController.h"
 
-@interface ExampleViewController : UIViewController
-
+@interface ExampleViewController : EKVideoController
 
 @end
 
