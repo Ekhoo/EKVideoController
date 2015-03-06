@@ -18,6 +18,11 @@
     [super viewDidLoad];
 }
 
+- (void)loadView {
+    self.view                 = [[UIView alloc] initWithFrame:EK_SCREEN_BOUNDS];
+    self.view.backgroundColor = [UIColor whiteColor];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ExampleViewController.h"
 
 @interface AppDelegate ()
 
@@ -14,8 +15,14 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] initWithFrame:EK_SCREEN_BOUNDS];
+
+    ExampleViewController *exampleViewController = [ExampleViewController new];
+    self.window.rootViewController               = exampleViewController;
+    
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 
