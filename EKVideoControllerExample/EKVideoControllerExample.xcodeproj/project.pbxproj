@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE1ABD4E1AA9CEBC00F14029 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1ABD4D1AA9CEBC00F14029 /* main.m */; };
+		BE1ABD511AA9CEBC00F14029 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1ABD501AA9CEBC00F14029 /* AppDelegate.m */; };
+		BE1ABD541AA9CEBC00F14029 /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1ABD531AA9CEBC00F14029 /* ExampleViewController.m */; };
+		BE1ABD571AA9CEBC00F14029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE1ABD551AA9CEBC00F14029 /* Main.storyboard */; };
+		BE1ABD591AA9CEBC00F14029 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE1ABD581AA9CEBC00F14029 /* Images.xcassets */; };
+		BE1ABD5C1AA9CEBC00F14029 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1ABD5A1AA9CEBC00F14029 /* LaunchScreen.xib */; };
+		BE1ABD681AA9CEBC00F14029 /* EKVideoControllerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1ABD671AA9CEBC00F14029 /* EKVideoControllerExampleTests.m */; };
+		BE830F8C1AA9D21C00AC9BB4 /* EKVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE830F8B1AA9D21C00AC9BB4 /* EKVideoController.m */; };
+		BE830F8F1AA9D38600AC9BB4 /* Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BE830F8E1AA9D38600AC9BB4 /* Video.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE1ABD621AA9CEBC00F14029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE1ABD401AA9CEBC00F14029 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE1ABD471AA9CEBC00F14029;
+			remoteInfo = EKVideoControllerExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE1ABD481AA9CEBC00F14029 /* EKVideoControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EKVideoControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1ABD4C1AA9CEBC00F14029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE1ABD4D1AA9CEBC00F14029 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE1ABD4F1AA9CEBC00F14029 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE1ABD501AA9CEBC00F14029 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE1ABD521AA9CEBC00F14029 /* ExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
+		BE1ABD531AA9CEBC00F14029 /* ExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleViewController.m; sourceTree = "<group>"; };
+		BE1ABD561AA9CEBC00F14029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE1ABD581AA9CEBC00F14029 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BE1ABD5B1AA9CEBC00F14029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BE1ABD611AA9CEBC00F14029 /* EKVideoControllerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EKVideoControllerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1ABD661AA9CEBC00F14029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE1ABD671AA9CEBC00F14029 /* EKVideoControllerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EKVideoControllerExampleTests.m; sourceTree = "<group>"; };
+		BE830F8A1AA9D21C00AC9BB4 /* EKVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EKVideoController.h; path = ../EKVideoController/EKVideoController.h; sourceTree = "<group>"; };
+		BE830F8B1AA9D21C00AC9BB4 /* EKVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EKVideoController.m; path = ../EKVideoController/EKVideoController.m; sourceTree = "<group>"; };
+		BE830F8E1AA9D38600AC9BB4 /* Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Video.mp4; path = Ressources/Videos/Video.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE1ABD451AA9CEBC00F14029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1ABD5E1AA9CEBC00F14029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE1ABD3F1AA9CEBB00F14029 = {
+			isa = PBXGroup;
+			children = (
+				BE830F8D1AA9D37700AC9BB4 /* Ressources */,
+				BE830F891AA9CFF900AC9BB4 /* EKVideoController */,
+				BE1ABD4A1AA9CEBC00F14029 /* EKVideoControllerExample */,
+				BE1ABD641AA9CEBC00F14029 /* EKVideoControllerExampleTests */,
+				BE1ABD491AA9CEBC00F14029 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE1ABD491AA9CEBC00F14029 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE1ABD481AA9CEBC00F14029 /* EKVideoControllerExample.app */,
+				BE1ABD611AA9CEBC00F14029 /* EKVideoControllerExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE1ABD4A1AA9CEBC00F14029 /* EKVideoControllerExample */ = {
+			isa = PBXGroup;
+			children = (
+				BE1ABD4F1AA9CEBC00F14029 /* AppDelegate.h */,
+				BE1ABD501AA9CEBC00F14029 /* AppDelegate.m */,
+				BE830F881AA9CF6600AC9BB4 /* Controller */,
+				BE830F871AA9CF6000AC9BB4 /* View */,
+				BE830F861AA9CF5800AC9BB4 /* Model */,
+				BE1ABD551AA9CEBC00F14029 /* Main.storyboard */,
+				BE1ABD581AA9CEBC00F14029 /* Images.xcassets */,
+				BE1ABD5A1AA9CEBC00F14029 /* LaunchScreen.xib */,
+				BE1ABD4B1AA9CEBC00F14029 /* Supporting Files */,
+			);
+			path = EKVideoControllerExample;
+			sourceTree = "<group>";
+		};
+		BE1ABD4B1AA9CEBC00F14029 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE1ABD4C1AA9CEBC00F14029 /* Info.plist */,
+				BE1ABD4D1AA9CEBC00F14029 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE1ABD641AA9CEBC00F14029 /* EKVideoControllerExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE1ABD671AA9CEBC00F14029 /* EKVideoControllerExampleTests.m */,
+				BE1ABD651AA9CEBC00F14029 /* Supporting Files */,
+			);
+			path = EKVideoControllerExampleTests;
+			sourceTree = "<group>";
+		};
+		BE1ABD651AA9CEBC00F14029 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE1ABD661AA9CEBC00F14029 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE830F861AA9CF5800AC9BB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BE830F871AA9CF6000AC9BB4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BE830F881AA9CF6600AC9BB4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BE1ABD521AA9CEBC00F14029 /* ExampleViewController.h */,
+				BE1ABD531AA9CEBC00F14029 /* ExampleViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BE830F891AA9CFF900AC9BB4 /* EKVideoController */ = {
+			isa = PBXGroup;
+			children = (
+				BE830F8A1AA9D21C00AC9BB4 /* EKVideoController.h */,
+				BE830F8B1AA9D21C00AC9BB4 /* EKVideoController.m */,
+			);
+			name = EKVideoController;
+			sourceTree = "<group>";
+		};
+		BE830F8D1AA9D37700AC9BB4 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				BE830F8E1AA9D38600AC9BB4 /* Video.mp4 */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE1ABD471AA9CEBC00F14029 /* EKVideoControllerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE1ABD6B1AA9CEBC00F14029 /* Build configuration list for PBXNativeTarget "EKVideoControllerExample" */;
+			buildPhases = (
+				BE1ABD441AA9CEBC00F14029 /* Sources */,
+				BE1ABD451AA9CEBC00F14029 /* Frameworks */,
+				BE1ABD461AA9CEBC00F14029 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EKVideoControllerExample;
+			productName = EKVideoControllerExample;
+			productReference = BE1ABD481AA9CEBC00F14029 /* EKVideoControllerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE1ABD601AA9CEBC00F14029 /* EKVideoControllerExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE1ABD6E1AA9CEBC00F14029 /* Build configuration list for PBXNativeTarget "EKVideoControllerExampleTests" */;
+			buildPhases = (
+				BE1ABD5D1AA9CEBC00F14029 /* Sources */,
+				BE1ABD5E1AA9CEBC00F14029 /* Frameworks */,
+				BE1ABD5F1AA9CEBC00F14029 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE1ABD631AA9CEBC00F14029 /* PBXTargetDependency */,
+			);
+			name = EKVideoControllerExampleTests;
+			productName = EKVideoControllerExampleTests;
+			productReference = BE1ABD611AA9CEBC00F14029 /* EKVideoControllerExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE1ABD401AA9CEBC00F14029 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Ekhoo;
+				TargetAttributes = {
+					BE1ABD471AA9CEBC00F14029 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					BE1ABD601AA9CEBC00F14029 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = BE1ABD471AA9CEBC00F14029;
+					};
+				};
+			};
+			buildConfigurationList = BE1ABD431AA9CEBC00F14029 /* Build configuration list for PBXProject "EKVideoControllerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE1ABD3F1AA9CEBB00F14029;
+			productRefGroup = BE1ABD491AA9CEBC00F14029 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE1ABD471AA9CEBC00F14029 /* EKVideoControllerExample */,
+				BE1ABD601AA9CEBC00F14029 /* EKVideoControllerExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE1ABD461AA9CEBC00F14029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1ABD571AA9CEBC00F14029 /* Main.storyboard in Resources */,
+				BE1ABD5C1AA9CEBC00F14029 /* LaunchScreen.xib in Resources */,
+				BE1ABD591AA9CEBC00F14029 /* Images.xcassets in Resources */,
+				BE830F8F1AA9D38600AC9BB4 /* Video.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1ABD5F1AA9CEBC00F14029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE1ABD441AA9CEBC00F14029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1ABD541AA9CEBC00F14029 /* ExampleViewController.m in Sources */,
+				BE830F8C1AA9D21C00AC9BB4 /* EKVideoController.m in Sources */,
+				BE1ABD511AA9CEBC00F14029 /* AppDelegate.m in Sources */,
+				BE1ABD4E1AA9CEBC00F14029 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1ABD5D1AA9CEBC00F14029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1ABD681AA9CEBC00F14029 /* EKVideoControllerExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE1ABD631AA9CEBC00F14029 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE1ABD471AA9CEBC00F14029 /* EKVideoControllerExample */;
+			targetProxy = BE1ABD621AA9CEBC00F14029 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE1ABD551AA9CEBC00F14029 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE1ABD561AA9CEBC00F14029 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE1ABD5A1AA9CEBC00F14029 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE1ABD5B1AA9CEBC00F14029 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE1ABD691AA9CEBC00F14029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE1ABD6A1AA9CEBC00F14029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE1ABD6C1AA9CEBC00F14029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EKVideoControllerExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BE1ABD6D1AA9CEBC00F14029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EKVideoControllerExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BE1ABD6F1AA9CEBC00F14029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EKVideoControllerExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EKVideoControllerExample.app/EKVideoControllerExample";
+			};
+			name = Debug;
+		};
+		BE1ABD701AA9CEBC00F14029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EKVideoControllerExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EKVideoControllerExample.app/EKVideoControllerExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE1ABD431AA9CEBC00F14029 /* Build configuration list for PBXProject "EKVideoControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE1ABD691AA9CEBC00F14029 /* Debug */,
+				BE1ABD6A1AA9CEBC00F14029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE1ABD6B1AA9CEBC00F14029 /* Build configuration list for PBXNativeTarget "EKVideoControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE1ABD6C1AA9CEBC00F14029 /* Debug */,
+				BE1ABD6D1AA9CEBC00F14029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE1ABD6E1AA9CEBC00F14029 /* Build configuration list for PBXNativeTarget "EKVideoControllerExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE1ABD6F1AA9CEBC00F14029 /* Debug */,
+				BE1ABD701AA9CEBC00F14029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE1ABD401AA9CEBC00F14029 /* Project object */;
+}
