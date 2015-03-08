@@ -45,8 +45,6 @@
     _moviePlayer.scalingMode  = MPMovieScalingModeAspectFill;
     _moviePlayer.repeatMode   = self.repeat ? MPMovieRepeatModeOne : MPMovieRepeatModeNone;
     
-    [_moviePlayer prepareToPlay];
-    
     [self.view addSubview:_moviePlayer.view];
     [self.view sendSubviewToBack:_moviePlayer.view];
 }
@@ -62,6 +60,25 @@
 - (void)play {
     NSParameterAssert(_moviePlayer);
     
+    [_moviePlayer play];
+}
+
+- (void)stop {
+    NSParameterAssert(_moviePlayer);
+    
+    [_moviePlayer stop];
+}
+
+- (void)pause {
+    NSParameterAssert(_moviePlayer);
+    
+    [_moviePlayer pause];
+}
+
+- (void)restart {
+    NSParameterAssert(_moviePlayer);
+    
+    [_moviePlayer stop];
     [_moviePlayer play];
 }
 

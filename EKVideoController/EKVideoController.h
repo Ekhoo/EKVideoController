@@ -27,4 +27,19 @@
 //
 - (void)play;
 
+//
+//  Stop the video.
+//
+- (void)stop;
+
+//
+//  Pause the video.
+//
+- (void)pause;
+
+//
+//  Restart the video from the beginning.
+//
+- (void)restart;
+
 @end
