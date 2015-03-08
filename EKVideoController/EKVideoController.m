@@ -25,6 +25,7 @@
     
     if (self) {
         _repeat        = YES;
+        _videoSpeed    = 1.0f;
         _maskTintColor = [UIColor clearColor];
         _maskAlpha     = 0.0f;
     }
@@ -46,12 +47,13 @@
         _moviePlayer = nil;
     }
 
-    _moviePlayer              = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:videoPath]];
-    _moviePlayer.view.frame   = EK_SCREEN_BOUNDS;
-    _moviePlayer.fullscreen   = YES;
-    _moviePlayer.controlStyle = MPMovieControlStyleNone;
-    _moviePlayer.scalingMode  = MPMovieScalingModeAspectFill;
-    _moviePlayer.repeatMode   = self.repeat ? MPMovieRepeatModeOne : MPMovieRepeatModeNone;
+    _moviePlayer                     = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:videoPath]];
+    _moviePlayer.view.frame          = EK_SCREEN_BOUNDS;
+    _moviePlayer.fullscreen          = YES;
+    _moviePlayer.controlStyle        = MPMovieControlStyleNone;
+    _moviePlayer.scalingMode         = MPMovieScalingModeAspectFill;
+    _moviePlayer.repeatMode          = self.repeat ? MPMovieRepeatModeOne : MPMovieRepeatModeNone;
+    _moviePlayer.currentPlaybackRate = self.videoSpeed;
     
     /*** Movie player mask ***/
     if (_moviePlayerMask) {
@@ -63,17 +65,24 @@
     _moviePlayerMask.alpha           = self.maskAlpha;
     _moviePlayerMask.backgroundColor = self.maskTintColor;
     
-    [self.view addSubview:_moviePlayer.view];
-    [self.view addSubview:_moviePlayerMask];
-    [self.view sendSubviewToBack:_moviePlayer.view];
+    [self.view addSubview:self.moviePlayer.view];
+    [self.view addSubview:self.moviePlayerMask];
+    [self.view sendSubviewToBack:self.moviePlayer.view];
 }
 
 - (void)setRepeat:(BOOL)repeat {
-    NSParameterAssert(_moviePlayer);
+    NSParameterAssert(self.moviePlayer);
     
     _repeat = repeat;
     
     _moviePlayer.repeatMode = repeat ? MPMovieRepeatModeOne : MPMovieRepeatModeNone;
+}
+
+- (void)setVideoSpeed:(CGFloat)videoSpeed {
+    NSParameterAssert(self.moviePlayer);
+    
+    _videoSpeed                          = videoSpeed;
+    self.moviePlayer.currentPlaybackRate = _videoSpeed;
 }
 
 - (void)setMaskTintColor:(UIColor *)maskTintColor {
@@ -91,25 +100,25 @@
 #pragma mark - Video controls
 
 - (void)play {
-    NSParameterAssert(_moviePlayer);
+    NSParameterAssert(self.moviePlayer);
     
     [_moviePlayer play];
 }
 
 - (void)stop {
-    NSParameterAssert(_moviePlayer);
+    NSParameterAssert(self.moviePlayer);
     
     [_moviePlayer stop];
 }
 
 - (void)pause {
-    NSParameterAssert(_moviePlayer);
+    NSParameterAssert(self.moviePlayer);
     
     [_moviePlayer pause];
 }
 
 - (void)restart {
-    NSParameterAssert(_moviePlayer);
+    NSParameterAssert(self.moviePlayer);
     
     [_moviePlayer stop];
     [_moviePlayer play];

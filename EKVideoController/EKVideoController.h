@@ -17,10 +17,16 @@
 @property(nonatomic, strong) NSString *videoPath;
 
 //
-//  Determines how the view controller repeats the playback of the video.
+//  Determine how the view controller repeats the playback of the video.
 //  Default value is YES.
 //
 @property(nonatomic, assign) BOOL repeat;
+
+//
+//  Determine the speed of the video.
+//  Default value is 1.0f;
+//
+@property(nonatomic, assign) CGFloat videoSpeed;
 
 //
 //  Determine the mask color.
