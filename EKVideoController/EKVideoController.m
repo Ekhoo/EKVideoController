@@ -33,6 +33,12 @@
     return self;
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+}
+
 #pragma mark - Setters
 
 - (void)setVideoPath:(NSString *)videoPath {
