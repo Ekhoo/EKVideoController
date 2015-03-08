@@ -22,8 +22,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.videoPath = [[NSBundle mainBundle] pathForResource:@"Video" ofType:@"mp4"];
-    self.repeat    = YES;
+    self.videoPath     = [[NSBundle mainBundle] pathForResource:@"Video" ofType:@"mp4"];
+    self.repeat        = YES;
+    self.maskTintColor = [UIColor blackColor];
+    self.maskAlpha     = 0.5f;
     
     [self play];
 }

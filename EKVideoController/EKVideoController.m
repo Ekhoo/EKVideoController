@@ -12,32 +12,40 @@
 @interface EKVideoController()
 
 @property(nonatomic, strong) MPMoviePlayerController *moviePlayer;
+@property(nonatomic, strong) UIView                  *moviePlayerMask;
 
 @end
 
 @implementation EKVideoController
 
+#pragma mark - Life cycle
+
 - (instancetype)init {
     self = [super init];
     
     if (self) {
-        _repeat = YES;
+        _repeat        = YES;
+        _maskTintColor = [UIColor clearColor];
+        _maskAlpha     = 0.0f;
     }
     
     return self;
 }
 
+#pragma mark - Setters
+
 - (void)setVideoPath:(NSString *)videoPath {
     NSParameterAssert(videoPath);
     
     _videoPath = videoPath;
-    
+
+    /*** Movie player ***/
     if (_moviePlayer) {
         [_moviePlayer stop];
         [_moviePlayer.view removeFromSuperview];
         _moviePlayer = nil;
     }
-    
+
     _moviePlayer              = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:videoPath]];
     _moviePlayer.view.frame   = EK_SCREEN_BOUNDS;
     _moviePlayer.fullscreen   = YES;
@@ -45,7 +53,18 @@
     _moviePlayer.scalingMode  = MPMovieScalingModeAspectFill;
     _moviePlayer.repeatMode   = self.repeat ? MPMovieRepeatModeOne : MPMovieRepeatModeNone;
     
+    /*** Movie player mask ***/
+    if (_moviePlayerMask) {
+        [_moviePlayerMask removeFromSuperview];
+        _moviePlayerMask = nil;
+    }
+    
+    _moviePlayerMask                 = [[UIView alloc] initWithFrame:EK_SCREEN_BOUNDS];
+    _moviePlayerMask.alpha           = self.maskAlpha;
+    _moviePlayerMask.backgroundColor = self.maskTintColor;
+    
     [self.view addSubview:_moviePlayer.view];
+    [self.view addSubview:_moviePlayerMask];
     [self.view sendSubviewToBack:_moviePlayer.view];
 }
 
@@ -56,6 +75,20 @@
     
     _moviePlayer.repeatMode = repeat ? MPMovieRepeatModeOne : MPMovieRepeatModeNone;
 }
+
+- (void)setMaskTintColor:(UIColor *)maskTintColor {
+    _maskTintColor = maskTintColor;
+    
+    _moviePlayerMask.backgroundColor = _maskTintColor;
+}
+
+- (void)setMaskAlpha:(CGFloat)maskAlpha {
+    _maskAlpha = maskAlpha;
+    
+    _moviePlayerMask.alpha = _maskAlpha;
+}
+
+#pragma mark - Video controls
 
 - (void)play {
     NSParameterAssert(_moviePlayer);

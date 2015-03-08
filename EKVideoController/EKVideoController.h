@@ -23,6 +23,18 @@
 @property(nonatomic, assign) BOOL repeat;
 
 //
+//  Determine the mask color.
+//  Default value is [UIColor clearColor].
+//
+@property(nonatomic, strong) UIColor *maskTintColor;
+
+//
+//  Determine the transparency of the mask.
+//  Default value is 0.0f.
+//
+@property(nonatomic, assign) CGFloat maskAlpha;
+
+//
 //  Play the video.
 //
 - (void)play;
