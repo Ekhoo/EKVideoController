@@ -20,19 +20,35 @@ Light weight view controller which add a video as a full screen background for I
 - Enjoy :)
 
 ### Example
+#### Programatic
 ``` objective-c
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     self.videoPath     = [[NSBundle mainBundle] pathForResource:@"Video" ofType:@"mp4"];
     self.repeat        = YES;
     self.maskTintColor = [UIColor blackColor];
     self.maskAlpha     = 0.5f;
-    
+
     [self play];
 }
 ```
+#### StoryBoard
+``` objective-c
+- (void)viewDidLoad {
+    [super viewDidLoad];
 
+    self.videoPath     = [[NSBundle mainBundle] pathForResource:@"Video" ofType:@"mp4"];
+    self.repeat        = YES;
+    self.maskTintColor = [UIColor blackColor];
+    self.maskAlpha     = 0.5f;
+
+    [self play];
+}
+- (id)initWithCoder:(NSCoder *)aDecoder{
+    return [super init];
+}
+```
 ### Contact
 - [contact@lucas-ortis.com](contact@lucas-ortis.com)
 - [Facebook](https://www.facebook.com/lucasekhoo.ortis)
