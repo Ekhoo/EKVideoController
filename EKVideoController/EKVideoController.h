@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#define EK_SCREEN_BOUNDS [[UIScreen mainScreen] bounds]
+#define EK_SCREEN_WIDTH  [[[UIScreen mainScreen] bounds] width]
+#define EK_SCREEN_HEIGHT [[[UIScreen mainScreen] bounds] height]
+
 @interface EKVideoController : UIViewController
 
 //

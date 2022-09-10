@@ -13,6 +13,7 @@
 		BE1ABD591AA9CEBC00F14029 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE1ABD581AA9CEBC00F14029 /* Images.xcassets */; };
 		BE1ABD5C1AA9CEBC00F14029 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1ABD5A1AA9CEBC00F14029 /* LaunchScreen.xib */; };
 		BE1ABD681AA9CEBC00F14029 /* EKVideoControllerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1ABD671AA9CEBC00F14029 /* EKVideoControllerExampleTests.m */; };
+		BE44F0CC1AACBE0200D53FCC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE44F0CB1AACBE0200D53FCC /* MediaPlayer.framework */; };
 		BE830F8C1AA9D21C00AC9BB4 /* EKVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE830F8B1AA9D21C00AC9BB4 /* EKVideoController.m */; };
 		BE830F8F1AA9D38600AC9BB4 /* Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BE830F8E1AA9D38600AC9BB4 /* Video.mp4 */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		BE1ABD611AA9CEBC00F14029 /* EKVideoControllerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EKVideoControllerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1ABD661AA9CEBC00F14029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE1ABD671AA9CEBC00F14029 /* EKVideoControllerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EKVideoControllerExampleTests.m; sourceTree = "<group>"; };
+		BE44F0CB1AACBE0200D53FCC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		BE830F8A1AA9D21C00AC9BB4 /* EKVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EKVideoController.h; path = ../EKVideoController/EKVideoController.h; sourceTree = "<group>"; };
 		BE830F8B1AA9D21C00AC9BB4 /* EKVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EKVideoController.m; path = ../EKVideoController/EKVideoController.m; sourceTree = "<group>"; };
 		BE830F8E1AA9D38600AC9BB4 /* Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Video.mp4; path = Ressources/Videos/Video.mp4; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE44F0CC1AACBE0200D53FCC /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +70,7 @@
 		BE1ABD3F1AA9CEBB00F14029 = {
 			isa = PBXGroup;
 			children = (
+				BE44F0CA1AACBDC400D53FCC /* Frameworks */,
 				BE830F8D1AA9D37700AC9BB4 /* Ressources */,
 				BE830F891AA9CFF900AC9BB4 /* EKVideoController */,
 				BE1ABD4A1AA9CEBC00F14029 /* EKVideoControllerExample */,
@@ -124,6 +128,14 @@
 				BE1ABD661AA9CEBC00F14029 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE44F0CA1AACBDC400D53FCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE44F0CB1AACBE0200D53FCC /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BE830F861AA9CF5800AC9BB4 /* Model */ = {

@@ -1,3 +1,5 @@
+
+![EKVideoController](http://img.shields.io/cocoapods/v/EKVideoController.svg?style=flat)
 # EKVideoController
 Light weight view controller which add a video as a full screen background for IOS written in Objective-C.
 
